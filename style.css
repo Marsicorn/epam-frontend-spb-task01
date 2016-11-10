@@ -1,0 +1,26 @@
+body {
+  font-family: Arial;
+
+  width: 210mm; /*A4 paper width*/
+  margin: auto;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+li > ul {
+  list-style-type: circle;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+a {
+  color: #bb0000;
+}
