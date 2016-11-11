@@ -1,7 +1,9 @@
 body {
   font-family: Arial;
 
-  width: 210mm; /*A4 paper width*/
+  /*width: 50%;*/
+  max-width: 210mm; /*A4 paper width*/
+  padding-left: 10px;
   margin: auto;
 }
 
