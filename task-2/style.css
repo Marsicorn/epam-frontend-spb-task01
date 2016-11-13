@@ -1,0 +1,250 @@
+:root {
+  --social-logo: url("");
+  --link-color: #00aeff;
+  --fn-org-color: #3d9ccc;
+  --fn-color: #96c93c;
+  --text-color: #515e72;
+  --about-column-width: (100vw - 148px)/2;
+}
+
+body {
+  color: var(--text-color);
+  font-size: 14px ;
+  font-family: 'PT Sans Regular', sans-serif;
+  margin: 4vw 10vw;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#tools > h3 {
+  font-size: 11px ;
+  font-family: 'PT Sans', sans-serif;
+
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: right;
+
+  padding-right: 4vw;
+}
+
+#tools > ul {
+  display: inline-block;
+  min-width: fit-content;
+}
+
+body > section {
+  margin-top: 5vw;
+}
+
+ul#social,
+#work > ul,
+#skills > ul,
+#projects > ul,
+#interests > ul,
+#tools > ul {
+  margin: 0;
+  padding: 0;
+}
+
+#work span,
+#skills span {
+  display: block;
+  margin: 0.5em 0;
+}
+
+#work span.fn {
+  font-size: 18px;
+  color: var(--fn-color);
+}
+
+#work span.fn.org {
+  font-size: 18px;
+  color: var(--fn-org-color);
+}
+
+#work span.role,
+#skills span.title,
+#projects span.title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+span.note {
+  font-size: 11px;
+}
+
+ul#social > li,
+#work > ul > li {
+  list-style: none;
+  background: var(--social-logo) no-repeat left;
+  padding-left: 32px;
+  margin-bottom: 1em;
+  font-family: 'PT Sans Regular', sans-serif;
+}
+
+#personal-site {
+    --social-logo: url("D:/Documents/Epam/task-2/resources/personal-site-logo.png");
+}
+
+#facebook {
+  --social-logo: url("D:/Documents/Epam/task-2/resources/facebook-logo.png");
+}
+
+#dribbble {
+  --social-logo: url("D:/Documents/Epam/task-2/resources/dribbble-logo.png");
+}
+
+#twitter {
+  --social-logo: url("D:/Documents/Epam/task-2/resources/twitter-logo.png");
+}
+
+#revision {
+  --social-logo: url("D:/Documents/Epam/task-2/resources/revision-logo.png");
+}
+
+#about {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+#about > * {
+  display: inline-block;
+  float: left;
+}
+
+#about > section {
+  margin: 0 1em 1em 1em;
+  width: 30vw;
+  box-sizing: border-box;
+}
+
+img.photo {
+  width: 20vw;
+  max-width: 148px;
+  min-width: 10vw;
+}
+
+img.separator {
+  display: block;
+  margin: auto;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+#skills,
+#projects {
+  padding: 0;
+  display: block;
+  clear: both;
+  /*margin: auto;*/
+  text-align: center;
+}
+
+.main-skills > li {
+  display: inline-block;
+  width: 20vw;
+  min-width: fit-content;
+  margin: 2vw;
+  list-style: none;
+}
+
+.main-skills > li > *,
+#projects li > * {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.main-skills img,
+#projects img {
+  margin: auto;
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+}
+
+.additional-skills > li {
+  display: inline-block;
+  margin-right: 3vw;
+}
+
+.additional-skills >li:first-child {
+  clear: both;
+}
+
+#projects li,
+#interests li {
+  display: inline-block;
+  width: 15vw;
+  min-width: fit-content;
+  margin-right: 1vw;
+  list-style: none;
+}
+
+#interests img,
+#projects img {
+  display: block;
+  margin-top: 1vw;
+}
+.main-tools {
+  width: 55%;
+  display: inline-block;
+  margin-right: 2vw;
+}
+.main-tools li {
+  display: block;
+  height: 35px;
+  text-transform: uppercase;
+  list-style: none;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: var(--fn-org-color);
+  color: white;
+}
+
+.other-tools {
+  width: 40%;
+  display: inline-block;
+  border-radius: 5px;
+  border-color: var(--text-color);
+  border-width: 2px;
+}
+
+.other-tools li {
+  display: block;
+  height: 25px;
+  text-transform: uppercase;
+  list-style: none;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+.other-tools li > span {
+  display: inline-block;
+}
+
+.other-tools li > span.note {
+  float: right;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+footer {
+  margin-top: 5vw;
+  clear: both;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  min-width: fit-content;
+}
