@@ -1,0 +1,467 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+	<title>Веб-разработка. Начало</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<link rel="stylesheet" href="themes/ribbon/styles/style.css">
+	<!--
+		Для оформления отдельный слайдов, используйте
+		ID слайда для доступа к необходимым элементам
+		-->
+	<style>
+		#Cover h2 {
+			color: #ffffff;
+			float: right;
+			text-align: right;
+			line-height: 90px;
+			font-size: 70px;
+		}
+		#Cover h2 span {
+			background: rgba(0, 0, 0, .5);
+			padding: 0 10px;
+		}
+		#HTML_STR h2 {
+			color: #ffffff;
+			text-align: center;
+			font-size: 60px;
+		}
+		#HTML_STR_1 img {
+			float: right;
+			margin-top: -250px;
+		}
+		.wrong {
+			color: #cc0000;
+		}
+		#semantics_cross h2 {
+			margin-top: -200px;
+			font-size: 120px;
+		}
+		#semantics_cross p {
+			margin-top: 40px;
+			text-align: center;
+		}
+		#crossbr p {
+			margin-bottom: 0;
+		}
+		#crossbr .browsers {
+			text-align: center;
+			margin-top: 0;
+		}
+		#crossbr .browsers img {
+			height: 300px;;
+		}
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Веб-разработка. Начало.</h1>
+		<p>Сергей Смольников, Epam Systems</p>
+	</header>
+	<div class="slide cover w" id="Cover"><div>
+		<section>
+			<header>
+				<h2>
+					<span>Веб-разработка.</span><br><span>Начало.</span>
+				</h2>
+			</header>
+			<img src="pictures/inception.jpg" alt="">
+		</section>
+	</div></div>
+	<div class="slide shout" id="Title"><div>
+		<section>
+			<header>
+				<h2>HTML, CSS</h2>
+			</header>
+		</section>
+	</div></div>
+	<div class="slide" id="HTML_introduction"><div>
+		<section>
+			<header>
+				<h2>HTML</h2>
+			</header>
+			<ol>
+				<li>Структура</li>
+				<li>DOCTYPE</li>
+				<li>Мета-теги</li>
+				<li>Теги</li>
+				<li>Аттрибуты</li>
+				<li>Гиперссылки</li>
+				<li>Семантика</li>
+			</ol>
+		</section>
+	</div></div>
+	<div class="slide shout" id="HTML_1"><div>
+		<section>
+			<header>
+				<h2>HTML</h2>
+			</header>
+		</section>
+	</div></div>
+	<div class="slide shout" id="HTML_11"><div>
+		<section>
+			<header>
+				<h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+					<title>HTML5 Logo</title>
+
+					<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+					<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+					<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+					<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+					<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+					<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+					<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+					<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+					<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+					<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+				</svg>
+				</h2>
+			</header>
+		</section>
+	</div></div>
+	<div class="slide" id="HTML_2"><div>
+		<section>
+			<header>
+				<h2>HTML</h2>
+			</header>
+			<p><code>HTML (HyperText Markup Language)</code> – язык разметки гипертекста.</p>
+			<p>HTML не является языком программирования, он предназначен для структурирования документов без привязки к средставм отображения.</p>
+		</section>
+	</div></div>
+	<div class="slide shout" id="HTML_3"><div>
+		<section>
+			<header>
+				<h2><img src="pictures/w3c_logo_png_82711.png" alt="W3C Logo"></h2>
+			</header>
+		</section>
+	</div></div>
+	<div class="slide" id="HTML_4"><div>
+		<section>
+			<header>
+				<h2>История HTML</h2>
+			</header>
+			<ol>
+				<li>SGML (Standard Generalized Markup Language)</li>
+				<li><s>HTML1</s> by Sir Timothy John "Tim" Berners-Lee</li>
+				<li>HTML 2.0 (1995)</li>
+				<li><s>HTML 3 (1996)</s></li>
+				<li>HTML 4.0 (1997)</li>
+				<li>HTML 4.01 (1999)</li>
+				<li>HTML 5 (в разработке W3C и WHATWG с 2004)</li>
+			</ol>
+		</section>
+	</div></div>
+	<div class="slide cover w" id="HTML_STR"><div>
+		<section>
+			<header>
+				<h2>Структура HTML-документа</h2>
+			</header>
+			<img src="pictures/headbody.jpg" alt="">
+		</section>
+	</div></div>
+	<div class="slide" id="HTML_STR_1"><div>
+		<section>
+			<header>
+				<h2>Структура HTML-документа</h2>
+			</header>
+			<pre>
+				<code>&lt;!DOCTYPE html&gt;</code>
+				<code>&lt;html/&gt;</code>
+				<code>  &lt;head/&gt;</code>
+				<code>  &lt;body/&gt;</code>
+			</pre>
+			<img src="pictures/struct-webpage.gif" alt="">
+		</section>
+	</div></div>
+	<div class="slide shout" id="HTML_STR_2"><div>
+		<section>
+			<header>
+				<h2>DOCTYPE</h2>
+			</header>
+		</section>
+	</div></div>
+	<div class="slide" id="HTML_STR_3"><div>
+		<section>
+			<header>
+				<h2>DOCTYPE</h2>
+			</header>
+			<ul>
+				<li>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;</li>
+				<li>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</li>
+				<li>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</li>
+				<li>&lt;!DOCTYPE HTML&gt;</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="HTML_STR_4"><div>
+		<section>
+			<header>
+				<h2>DOCTYPE</h2>
+			</header>
+			<ul>
+				<li>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;</li>
+				<li>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</li>
+				<li>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</li>
+				<li><mark>&lt;!DOCTYPE HTML&gt;</mark></li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide shout" id="Tags"><div>
+		<section>
+			<header>
+				<h2>Теги</h2>
+			</header>
+		</section>
+	</div></div>
+	<div class="slide" id="Tags2"><div>
+		<section>
+			<header>
+				<h2>Теги</h2>
+			</header>
+			<p><code>HTML-тег</code> – управляющая символьная последовательность HTML-разметки</p>
+			<p>
+				<code>&lt;тег [атрибуты]&gt;</code><br>
+				<code>&lt;/закрывающий тег&gt;</code><br><br>
+				<code>&lt;тег элемента с пустой моделью/&gt;</code>
+			</p>
+		</section>
+	</div></div>
+	<div class="slide" id="Tags3"><div>
+		<section>
+			<header>
+				<h2>Теги</h2>
+			</header>
+			<p>Правильно</p>
+			<pre>
+				<code>&lt;p&gt;</code>
+				<code>  &lt;span&gt;</code>
+				<code>  &lt;/span&gt;</code>
+				<code>&lt;/p&gt;</code>
+			</pre>
+		</section>
+	</div></div>
+	<div class="slide" id="Tags4_wrong"><div>
+		<section>
+			<header>
+				<h2>Теги</h2>
+			</header>
+			<p class="wrong">Неправильно</p>
+			<pre>
+				<code>&lt;p&gt;</code>
+				<code>  &lt;span&gt;</code>
+				<code>  &lt;/p&gt;</code>
+				<code>&lt;/span&gt;</code>
+			</pre>
+		</section>
+	</div></div>
+	<div class="slide" id="Tags5"><div>
+		<section>
+			<header>
+				<h2>Теги</h2>
+			</header>
+			<p class="wrong">Правильно</p>
+			<pre>
+				<code>&lt;ul&gt;</code>
+				<code>  &lt;li&gt;</code>
+				<code>  &lt;li&gt;</code>
+				<code>&lt;/ul&gt;</code>
+			</pre>
+		</section>
+	</div></div>
+	<div class="slide cover" id="Tags_list"><div>
+		<section>
+			<header>
+			</header>
+			<img src="pictures/HTML5-Cheatsheet.jpg" alt="">
+		</section>
+	</div></div>
+	<div class="slide cover" id="Tags_list2"><div>
+		<section>
+			<header>
+			</header>
+			<img src="pictures/html5_cheat_sheet_tags.png" alt="">
+		</section>
+	</div></div>
+	<div class="slide shout" id="Attrs"><div>
+		<section>
+			<header>
+				<h2>Атрибуты</h2>
+			</header>
+		</section>
+	</div></div>
+	<div class="slide" id="Attrs2"><div>
+		<section>
+			<header>
+				<h2>Атрибуты</h2>
+			</header>
+			<p><code>Атрибут</code> – пара вида <code>свойство="значение"</code>, представляющие дополнительную информацию об элементе</p>
+			<ul>
+				<li>глобальные/неглобальные</li>
+				<li>обязательные/необязательные</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide shout" id="Elem"><div>
+		<section>
+			<header>
+				<h2>Элементы</h2>
+			</header>
+		</section>
+	</div></div>
+	<div class="slide" id="Elems"><div>
+		<section>
+			<header>
+				<h2>Элементы</h2>
+			</header>
+			<pre>
+				<code>&lt;p&gt;Это параграф&lt;/p&gt;</code>
+				<code>&lt;a href="http://yandex.ru"&gt;Яндекс&lt;/a&gt;</code>
+				<code>&lt;img src="pictures/logo.png" alt=""/&gt;</code>
+			</pre>
+		</section>
+	</div></div>
+	<div class="slide" id="Elems1"><div>
+		<section>
+			<header>
+				<h2>Синтаксис элемента</h2>
+			</header>
+			<ul>
+				<li>Элемент HTML начинается с открывающего тега</li>
+				<li>Элемент HTML заканчивается закрывающим тегом</li>
+				<li>Содержимое элемента это все между началом и концом тега</li>
+				<li>Некоторые HTML элементы имеют пустое содержимое</li>
+				<li>Пустые элементы закрыты в начале тега</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide shout" id="Links"><div>
+		<section>
+			<header>
+				<h2>Гиперссылки</h2>
+			</header>
+		</section>
+	</div></div>
+	<div class="slide" id="Links2"><div>
+		<section>
+			<header>
+				<h2>Гиперссылки</h2>
+			</header>
+			<pre>
+				<code><mark>&lt;a href="http://yandex.ru"&gt;</mark><a href="http://yandex.ru">Яндекс</a><mark>&lt;/a&gt;</mark></code>
+				<code><mark>&lt;a href="#якорь"&gt;</mark><a href="#link">Ссылка на якорь</a><mark>&lt;/a&gt;</mark></code>
+				<code><mark>&lt;a href="http://yandex.ru/logo.png"&gt;</mark><a href="http://yandex.ru/logo.png">Скачать файл</a><mark>&lt;/a&gt;</mark></code>
+				<code><mark>&lt;a href="mailto:user@mail.com"&gt;</mark><a href="mailto:user@mail.com">Отправить письмо</a><mark>&lt;/a&gt;</mark></code>
+			</pre>
+		</section>
+	</div></div>
+	<div class="slide shout" id="semantics_cross"><div>
+		<section>
+			<header>
+				<h2>Кроссбраузерность<br>Семантика</h2>
+			</header>
+			<br><br>
+			<p><img src="pictures/13190860836883.png" alt=""></p>
+		</section>
+	</div></div>
+	<div class="slide" id="crossbr"><div>
+		<section>
+			<header>
+				<h2>Кроссбраузерность</h2>
+			</header>
+			<p><code>Кроссбраузерность</code> – свойство сайта отображаться и работать во всех популярных браузерах <em>условно</em> идентично</p>
+			<p class="browsers"><img src="pictures/cross-browser.png" alt=""></p>
+		</section>
+	</div></div>
+	<div class="slide" id="sema"><div>
+		<section>
+			<header>
+				<h2>Семантика</h2>
+			</header>
+			<p><code>Семантика</code> – совокупность смысловых отношений.</p>
+			<pre>
+				<code>&lt;dl&gt;</code>
+				<code>  &lt;dt&gt;Семантика&lt;/dt&gt;</code>
+				<code>  &lt;dd&gt;совокупность смысловых отношений.&lt;/dd&gt;</code>
+				<code>&lt;/dl&gt;</code>
+			</pre>
+		</section>
+	</div></div>
+	<div class="slide" id="sema1"><div>
+		<section>
+			<header>
+				<h2>Уровни семантики</h2>
+			</header>
+			<ol>
+				<li>Применение HTML-элементов</li>
+				<li>Именование элементов</li>
+				<li>Комбинация именованных элементов</li>
+			</ol>
+		</section>
+	</div></div>
+	<div class="slide" id="sema2"><div>
+		<section>
+			<header>
+				<h2>Первый уровень: применение HTML-элементов</h2>
+			</header>
+			<pre>
+				<code>&lt;div id="menu"&gt;</code>
+				<code>  &lt;a href="#"&gt;Колбаса&lt;/a&gt;</code>
+				<code>  &lt;a href="#"&gt;Масло&lt;/a&gt;</code>
+				<code>&lt;/div&gt;</code>
+			</pre>
+		</section>
+	</div></div>
+	<div class="slide" id="sema3"><div>
+		<section>
+			<header>
+				<h2>Первый уровень: применение HTML-элементов</h2>
+			</header>
+			<pre>
+				<code>&lt;ul id="menu"&gt;</code>
+				<code>  &lt;li&gt;&lt;a href="#"&gt;Колбаса&lt;/a&gt;&lt;/li&gt;</code>
+				<code>  &lt;li&gt;&lt;a href="#"&gt;Масло&lt;/a&gt;&lt;/li&gt;</code>
+				<code>&lt;/ul&gt;</code>
+			</pre>
+		</section>
+	</div></div>
+	<div class="slide" id="sema4"><div>
+		<section>
+			<header>
+				<h2>Второй уровень: именование</h2>
+			</header>
+			<pre>
+				<code>&lt;div id="header"&gt;</code>
+				<code>  &lt;ul id="menu"&gt;</code>
+				<code>      &lt;li&gt;&lt;a href="#"&gt;Колбаса&lt;/a&gt;&lt;/li&gt;</code>
+				<code>      &lt;li&gt;&lt;a href="#"&gt;Масло&lt;/a&gt;&lt;/li&gt;</code>
+				<code>  &lt;/ul&gt;</code>
+				<code>&lt;/div&gt;</code>
+			</pre>
+		</section>
+	</div></div>
+
+
+	<!--<div class="slide" id="ThankYou"><div>-->
+		<!--<section>-->
+			<!--<header>-->
+				<!--<h2>Шаблон презентаций Shower</h2>-->
+			<!--</header>-->
+			<!--<p>Вадим Макеев, Opera Software</p>-->
+			<!--<ul>-->
+				<!--<li><a href="http://pepelsbey.net">pepelsbey.net</a></li>-->
+				<!--<li><a href="http://twitter.com/pepelsbey">twitter.com/pepelsbey</a></li>-->
+				<!--<li><a href="mailto:pepelsbey@gmail.com">pepelsbey@gmail.com</a></li>-->
+			<!--</ul>-->
+			<!--<p>Shower: <a href="http://github.com/pepelsbey/shower">github.com/pepelsbey/shower</a></p>-->
+		<!--</section>-->
+	<!--</div></div>-->
+	<!--
+		Для того, чтобы убрать индикатор прогресса
+		из презентации, просто удалите элемент «progress».
+		-->
+	<div class="progress"><div></div></div>
+	<script src="scripts/script.js"></script>
+	<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+	<!-- Photos by John Carey — fiftyfootshadows.net -->
+</body>
+</html>
