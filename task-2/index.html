@@ -8,10 +8,10 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
-  <div id="about">
-    <img class="photo" src="resources/IvanBeloborodov.png" alt="Фото Ивана Белобородова" />
+  <section class="about">
+    <img class="about__photo" src="resources/IvanBeloborodov.png" alt="Фото Ивана Белобородова" />
 
-    <section id="info">
+    <div class="about__info">
       <h2>Обо мне</h2>
       <p>
         Привет! Меня зовут Иван Белобородов. Я родился и вырос в Ижевске, столице
@@ -24,79 +24,75 @@
         мотоциклам, немецкому пиву, английской музыке и французскому кино.
       </p>
 
-      <img class="separator" src="resources/separator.png" alt=""/>
-
-      <ul id="social">
-        <li class="url" id="personal-site">
+      <ul class="about__social">
+        <li class="url about__social--personal-site">
           <a href="http://beliv.net/">beliv.net</a>
         </li>
-        <li class="url" id="facebook">
+        <li class="url about__social--facebook">
           <a href="https://ru-ru.facebook.com/ivan.beloborodov">ivan.beloborodov</a>
         </li>
-        <li class="url" id="twitter">
+        <li class="url about__social--twitter">
           <a href="https://twitter.com/beliv">@beliv</a>
         </li>
-        <li class="url" id="dribbble">
+        <li class="url about__social--dribbble">
           <a href="https://dribbble.com/beliv">dribbble</a>
         </li>
-        <li class="url" id="revision">
+        <li class="url about__social--revision">
           <a href="http://revision.ru/a/beliv">revision.ru/a/beliv</a>
         </li>
       </ul>
-    </section>
+    </div>
 
-    <section id="work">
+    <ul class="about__work">
       <h2>Опыт работы</h2>
-      <ul>
-        <li class="office">
-          <span class="fn org">Центр Высоких Технологий</span>
-          <span class="role">UX Дизайнер</span>
-          <span class="note">Январь 2011 — июль 2013</span>
-        </li>
-        <li class="office">
-          <span class="fn org">ООО «БИТ-Мастер»</span>
-          <span class="role">Дизайнер мобильных интерфейсов</span>
-          <span class="note">август 2012 — июнь 2013 (внештатно) </span>
-        </li>
-        <li class="office">
-          <span class="fn org">Fastdev</span>
-          <span class="role">Дизайнер мобильных интерфейсов</span>
-          <span class="note">Апрель 2012 — июнь 2012 (внештатно)</span>
-        </li>
-        <li class="office">
-          <span class="fn org">ООО «Танго Телеком»</span>
-          <span class="role">Дизайнер веб и мобильных интерфейсов</span>
-          <span class="note">Сентябрь 2010 — январь 2011 (внештатно)</span>
-        </li>
-        <li class="freelance">
-          <span class="fn">Фрилансер</span>
-          <span class="role">Веб-дизайнер</span>
-          <span class="note">март 2009 — январь 2011</span>
-        </li>
-      </ul>
-    </section>
-  </div>
-
-  <section id="skills">
-    <h2>Навыки</h2>
-    <ul class="main-skills">
-      <li>
-        <span class="title">User Experience</span>
-        <span class="note">С 2010 года</span>
-        <img src="resources/ue-pic.png" alt=""/>
+      <li class="about__work--office">
+        <span class="fn org">Центр Высоких Технологий</span>
+        <span class="role">UX Дизайнер</span>
+        <span class="note">Январь 2011 — июль 2013</span>
       </li>
-      <li>
-        <span class="title">Дизайн мобильных интерфейсов</span>
-        <span class="note">С 2011 года</span>
-        <img src="resources/mobile-pic.png" alt=""/>
+      <li class="about__work--office">
+        <span class="fn org">ООО «БИТ-Мастер»</span>
+        <span class="role">Дизайнер мобильных интерфейсов</span>
+        <span class="note">август 2012 — июнь 2013 (внештатно) </span>
       </li>
-      <li>
-        <span class="title">Веб-интерфейсы</span>
-        <span class="note">С 2010 года</span>
-        <img src="resources/web-pic.png" alt=""/>
+      <li class="about__work--office">
+        <span class="fn org">Fastdev</span>
+        <span class="role">Дизайнер мобильных интерфейсов</span>
+        <span class="note">Апрель 2012 — июнь 2012 (внештатно)</span>
+      </li>
+      <li class="about__work--office">
+        <span class="fn org">ООО «Танго Телеком»</span>
+        <span class="role">Дизайнер веб и мобильных интерфейсов</span>
+        <span class="note">Сентябрь 2010 — январь 2011 (внештатно)</span>
+      </li>
+      <li class="about__work--freelance">
+        <span class="fn">Фрилансер</span>
+        <span class="role">Веб-дизайнер</span>
+        <span class="note">март 2009 — январь 2011</span>
       </li>
     </ul>
-    <ul class="additional-skills">
+  </section>
+
+  <section class="skills">
+    <h2>Навыки</h2>
+    <ul class="skills__main">
+      <li>
+        <span class="skills__title">User Experience</span>
+        <span class="skills__note">С 2010 года</span>
+        <div class="skills__condition">55</div>
+      </li>
+      <li>
+        <span class="skills__title">Дизайн мобильных интерфейсов</span>
+        <span class="skills__note">С 2011 года</span>
+        <div class="skills__condition">80</div>
+      </li>
+      <li>
+        <span class="skills__title">Веб-интерфейсы</span>
+        <span class="skills__note">С 2010 года</span>
+        <div class="skills__condition">60</div>
+      </li>
+    </ul>
+    <ul class="skills__additional">
       <li>Базовые знания HTML &amp; CSS</li>
       <li>Клубный фотограф</li>
       <li>Интерфейсы для Smart TV</li>
@@ -104,11 +100,10 @@
     </ul>
   </section>
 
-  <section id="tools">
+  <section class="tools">
     <h2>Инструменты</h2>
-    <h3>Активность</h3>
 
-    <ul class="main-tools">
+    <ul class="tools__main">
       <li>Photoshop</li>
       <li>Illustrator</li>
       <li>Indesign</li>
@@ -116,41 +111,42 @@
       <li>Axure</li>
     </ul>
 
-    <ul class="other-tools">
+    <ul class="tools__activity">
+      <h3>Активность</h3>
       <li>
-        <span class="title">Balsamiq Mockups</span>
-        <span class="note">Август 2013</span>
+        <span class="tools__title">Balsamiq Mockups</span>
+        <span class="tools__note">Август 2013</span>
       </li>
       <li>
-        <span class="title">Diablo III</span>
-        <span class="note">29 Сентября</span>
+        <span class="tools__title">Diablo III</span>
+        <span class="tools__note">29 Сентября</span>
       </li>
       <li>
-        <span class="title">iA Writer</span>
-        <span class="note">позавчера</span>
+        <span class="tools__title">iA Writer</span>
+        <span class="tools__note">позавчера</span>
       </li>
       <li>
-        <span class="title">Lightroom</span>
-        <span class="note">Сентябрь 2013</span>
+        <span class="tools__title">Lightroom</span>
+        <span class="tools__note">Сентябрь 2013</span>
       </li>
       <li>
-        <span class="title">Skala Preview &amp; view</span>
-        <span class="note">Вчера</span>
+        <span class="tools__title">Skala Preview &amp; view</span>
+        <span class="tools__note">Вчера</span>
       </li>
       <li>
-        <span class="title">Xcode</span>
-        <span class="note">Май 2016</span>
+        <span class="tools__title">Xcode</span>
+        <span class="tools__note">Май 2016</span>
       </li>
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>Последние проекты</h2>
+  <section class="last-projects">
     <ul>
+      <h2>Последние проекты</h2>
       <li>
-        <span class="title">TaxiCaller</span>
-        <span class="note">Декабрь 2012 - Март 2013</span>
-        <img src="resources/TaxiCaller.png" alt=""/>
+        <span class="last-projects__title">TaxiCaller</span>
+        <span class="last-projects__note">Декабрь 2012 - Март 2013</span>
+        <img class="last-projects__image" src="resources/TaxiCaller.png" alt=""/>
       </li>
       <li>
         <span class="title">Check, please!</span>
@@ -170,33 +166,31 @@
     </ul>
   </section>
 
-  <section id="interests">
-    <h2>Интересы</h2>
+  <section class="interests">
     <ul>
+      <h2>Интересы</h2>
       <li>
-        Музыка
-        <img src="resources/Bowie.png" alt="Bowie"/>
+        <span class="interests__title">Музыка</span>
+        <img class="interests__image" src="resources/Bowie.png" alt="Музыка"/>
       </li>
       <li>
-        Мотоциклы
-        <img src="resources/moto.png" alt="">
+        <span class="interests__title">Мотоциклы</span>
+        <img class="interests__image" src="resources/moto.png" alt="Мотоциклы">
       </li>
       <li>
-        Кулинария
-        <img src="resources/cook.png" alt="">
+      <span class="interests__title">Кулинария</span>
+        <img class="interests__image" src="resources/cook.png" alt="Кулинария">
       </li>
       <li>
-        Велоспорт
-        <img src="resources/bike.png" alt="">
+        <span class="interests__title">Велоспорт</span>
+        <img class="interests__image" src="resources/bike.png" alt="Велоспорт">
       </li>
     </ul>
   </section>
 
-  <footer>
-    <p class="quote">
-      That's all, folks!
-    </p>
-    <img src="resources/BillMurray.png" alt="Bill Murray as John Winger in Stripes">
+  <footer class="footer">
+    <span class="footer__quote">That's all, folks!</span>
+    <img class="footer__image" src="resources/BillMurray.png" alt="Bill Murray as John Winger in Stripes">
   </footer>
 </body>
 </html>
